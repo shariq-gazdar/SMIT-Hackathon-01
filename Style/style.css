@@ -124,7 +124,20 @@ body {
   top: 6%;
   left: 85%;
 }
-
+#firstFCard {
+  height: 70vh;
+  width: 30vw;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url(../Assets/img/cardImgs/bed.webp);
+}
+#secondFCard {
+  height: 70vh;
+  width: 30vw;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url(../Assets/img/cardImgs/bed2.jpg);
+}
 /* added Css */
 @import url("../css/bootstrap.css");
 @import url("../css/jquery.fancybox.min.css");
