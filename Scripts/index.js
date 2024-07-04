@@ -2,6 +2,7 @@ let menuBtn = document.querySelector("#menuBtn");
 let closeBtn = document.querySelector("#closeBtn");
 let list = document.querySelector("#hamLinkContain");
 let halfContainer = document.querySelector(".halfContainer");
+let video = document.querySelector("#showVideo");
 menuBtn.addEventListener("click", () => {
   closeBtn.classList.remove("Hide");
   menuBtn.classList.add("Hide");
@@ -18,4 +19,10 @@ closeBtn.addEventListener("click", () => {
   list.classList.add("Hide");
   halfContainer.classList.remove("halfContainerTransition");
   halfContainer.classList.add("halfContainer");
+});
+function simulateClick() {
+  video.click();
+}
+document.addEventListener("DOMContentLoaded", function () {
+  simulateClick();
 });
