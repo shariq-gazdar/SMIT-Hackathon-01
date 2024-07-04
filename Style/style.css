@@ -124,8 +124,7 @@ body {
   top: 6%;
   left: 85%;
 }
-#videoSection {
-}
+
 /* added Css */
 @import url("../css/bootstrap.css");
 @import url("../css/jquery.fancybox.min.css");
