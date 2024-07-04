@@ -25,6 +25,8 @@ body {
   justify-content: left;
   position: fixed;
   z-index: 2;
+  background-color: var(--theme-color);
+  width: 100vw;
 }
 #linkContainer ul li {
   display: inline;
@@ -121,6 +123,8 @@ body {
   position: fixed;
   top: 6%;
   left: 85%;
+}
+#videoSection {
 }
 /* added Css */
 @import url("../css/bootstrap.css");
