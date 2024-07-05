@@ -67,6 +67,49 @@ body {
   align-items: center;
   margin-left: 8vw;
 }
+#leftSection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#rightSide {
+  float: right;
+  position: fixed;
+  top: 6%;
+  left: 85%;
+}
+#bedCard {
+  margin-top: 2vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+#firstBCard {
+  height: 70vh;
+  width: 30vw;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url(../Assets/img/cardImgs/bed.webp);
+}
+#secondBCard {
+  height: 70vh;
+  width: 30vw;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url(../Assets/img/cardImgs/bed2.jpg);
+}
+#thirdBCard {
+  height: 70vh;
+  width: 30vw;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url(../Assets/img/cardImgs/bed3.webp);
+}
+#firstBCard:hover {
+  transform: scale(0.5);
+}
+/* Responsive Media Queries */
 @media (max-width: 667px) {
   #midSection {
     display: none;
@@ -112,31 +155,6 @@ body {
     margin-top: -4.5vw;
     margin-left: 16vw;
   }
-}
-#leftSection {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-#rightSide {
-  float: right;
-  position: fixed;
-  top: 6%;
-  left: 85%;
-}
-#firstFCard {
-  height: 70vh;
-  width: 30vw;
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-image: url(../Assets/img/cardImgs/bed.webp);
-}
-#secondFCard {
-  height: 70vh;
-  width: 30vw;
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-image: url(../Assets/img/cardImgs/bed2.jpg);
 }
 /* added Css */
 @import url("../css/bootstrap.css");
