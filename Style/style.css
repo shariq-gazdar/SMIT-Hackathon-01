@@ -126,8 +126,68 @@ body {
 }
 #potCards h1 {
   text-align: center;
+  margin-bottom: 8vh;
 }
-#pCardOne {
+#potContainer {
+  display: flex;
+  justify-content: space-around;
+  align-items: stretch;
+  flex-wrap: wrap;
+}
+.pCards {
+  height: 90vh;
+}
+.pCards img {
+  object-fit: fill;
+}
+.pCardInfo {
+  visibility: hidden;
+  position: relative;
+  color: white;
+  font-weight: 100 important;
+  bottom: 10%;
+}
+.pCards:hover .pCardInfo {
+  transition: 1s ease;
+  visibility: visible;
+}
+.pCards:hover img {
+  transition: 0.5s ease;
+  transform: scale(1.05);
+  box-shadow: 0px 4px 8px black;
+}
+#sCardHeading {
+  text-align: center;
+}
+.sCard {
+  display: inline-block;
+  padding: 1vw;
+}
+#sCards {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  white-space: nowrap;
+}
+.sCard img {
+  display: inline;
+  width: 300px;
+  height: 315px;
+  overflow: scroll;
+}
+.sCardInfo {
+  visibility: hidden;
+  position: relative;
+  bottom: 20%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 2vw;
+  color: white;
+  background-color: HSL(0, 0%, 30.6%);
+}
+.sCard:hover .sCardInfo {
+  visibility: visible;
 }
 /* Responsive Media Queries */
 @media (max-width: 667px) {
