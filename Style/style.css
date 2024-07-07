@@ -86,28 +86,48 @@ body {
   flex-wrap: wrap;
 }
 #firstBCard {
-  height: 70vh;
-  width: 30vw;
+  height: 65vh;
+  width: 29vw;
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
   background-image: url(../Assets/img/cardImgs/bed.webp);
 }
 #secondBCard {
-  height: 70vh;
-  width: 30vw;
+  height: 65vh;
+  width: 29vw;
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
   background-image: url(../Assets/img/cardImgs/bed2.jpg);
 }
 #thirdBCard {
-  height: 70vh;
-  width: 30vw;
+  height: 65vh;
+  width: 29vw;
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
   background-image: url(../Assets/img/cardImgs/bed3.webp);
 }
 #firstBCard:hover {
-  transform: scale(0.5);
+  transform: scale(1.02);
+  box-shadow: 0px 4px 8px black;
+  transition: all 0.2s ease-in-out;
+}
+#secondBCard:hover {
+  transform: scale(1.02);
+  box-shadow: 0px 4px 8px black;
+  transition: all 0.2s ease-in-out;
+}
+#thirdBCard:hover {
+  transform: scale(1.02);
+  box-shadow: 0px 4px 8px black;
+  transition: all 0.2s ease-in-out;
+}
+#potCards {
+  margin-top: 10vh;
+}
+#potCards h1 {
+  text-align: center;
+}
+#pCardOne {
 }
 /* Responsive Media Queries */
 @media (max-width: 667px) {
