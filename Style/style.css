@@ -12,6 +12,7 @@
 }
 body {
   font-family: var(--font-family);
+  overflow-x: hidden;
 }
 /* Navbar */
 * {
@@ -23,6 +24,7 @@ body {
   height: 3vw;
   display: flex;
   justify-content: left;
+  align-items: center;
   position: fixed;
   z-index: 2;
   background-color: var(--theme-color);
@@ -75,7 +77,7 @@ body {
 #rightSide {
   float: right;
   position: fixed;
-  top: 6%;
+  top: 2%;
   left: 85%;
 }
 #bedCard {
@@ -165,9 +167,9 @@ body {
 }
 #sCards {
   display: flex;
-  overflow-x: auto;
-  scroll-snap-type: x mandatory;
-  white-space: nowrap;
+  overflow-x: scroll;
+  scroll-snap-type: proximity;
+  white-space: inherit;
 }
 .sCard img {
   display: inline;
@@ -176,6 +178,7 @@ body {
   overflow: scroll;
 }
 .sCardInfo {
+  transition: all 0.1s ease-in;
   visibility: hidden;
   position: relative;
   bottom: 20%;
@@ -189,6 +192,28 @@ body {
 .sCard:hover .sCardInfo {
   visibility: visible;
 }
+.awardText {
+  text-align: center;
+}
+#awardSection {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  text-align: center;
+}
+.Our1 {
+  height: 20vw;
+  width: 10vw;
+}
+.Our1 img {
+  height: auto;
+  max-width: 100%;
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+}
+
 /* Responsive Media Queries */
 @media (max-width: 667px) {
   #midSection {
@@ -235,333 +260,4 @@ body {
     margin-top: -4.5vw;
     margin-left: 16vw;
   }
-}
-/* added Css */
-@import url("../css/bootstrap.css");
-@import url("../css/jquery.fancybox.min.css");
-@import url("../css/slick.css");
-@import url("https://netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
-
-/* navbar  */
-.main {
-  background-color: #f1f1f1;
-  color: #111;
-  padding: 5px 5px;
-  position: static;
-}
-
-.logo img {
-  width: 22vw;
-  margin-left: -1pc;
-}
-
-.navbar {
-}
-
-.navbar ul {
-  display: flex;
-  padding: 9px 1px 1px 49px;
-  gap: 50px;
-  font-size: large;
-}
-
-.navbar ul li {
-  list-style: none;
-}
-
-.navbar ul li a {
-  text-decoration: none;
-  color: #4d4d4d;
-}
-
-/* side nav  */
-.side-bar span {
-  margin: -67px 17px 11px 74pc;
-  position: absolute;
-}
-
-.sidenav {
-  height: 100%;
-  width: 0;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  background-color: #111;
-  overflow-x: hidden;
-  transition: 0.5s;
-  padding-top: 60px;
-}
-
-.sidenav a {
-  padding: 8px 8px 8px 32px;
-  text-decoration: none;
-  font-size: 25px;
-  color: #818181;
-  display: block;
-  transition: 0.3s;
-}
-
-.sidenav a:hover {
-  color: #f1f1f1;
-}
-
-.sidenav .closebtn {
-  position: absolute;
-  top: 0;
-  right: 25px;
-  font-size: 36px;
-  margin-left: 50px;
-}
-
-@media screen and (max-height: 450px) {
-  .sidenav {
-    padding-top: 15px;
-  }
-
-  .sidenav a {
-    font-size: 18px;
-  }
-}
-
-/* close  */
-
-/* search bar  */
-
-.openBtn {
-  background: #f1f1f1;
-  border: none;
-  padding: 10px 15px;
-  font-size: 20px;
-  cursor: pointer;
-  margin-top: -14px;
-}
-
-.openBtn:hover {
-  background: #bbb;
-}
-
-.overlay {
-  height: 100%;
-  width: 100%;
-  display: none;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  background-color: rgb(0, 0, 0);
-  background-color: rgba(0, 0, 0, 0.9);
-}
-
-.overlay-content {
-  position: relative;
-  top: 46%;
-  width: 80%;
-  text-align: center;
-  margin-top: 30px;
-  margin: auto;
-}
-
-.overlay .closebtn {
-  position: absolute;
-  top: 20px;
-  right: 45px;
-  font-size: 60px;
-  cursor: pointer;
-  color: white;
-}
-
-.overlay .closebtn:hover {
-  color: #ccc;
-}
-
-.overlay input[type="text"] {
-  padding: 15px;
-  font-size: 17px;
-  border: none;
-  float: left;
-  width: 80%;
-  background: white;
-}
-
-.overlay input[type="text"]:hover {
-  background: #f1f1f1;
-}
-
-.overlay button {
-  float: left;
-  width: 20%;
-  padding: 15px;
-  background: #ddd;
-  font-size: 17px;
-  border: none;
-  cursor: pointer;
-}
-
-.overlay button:hover {
-  background: #bbb;
-}
-
-/* close  */
-
-.arts {
-  text-align: center;
-  font-size: 20px;
-  margin-bottom: 41px;
-  margin-top: 25px;
-}
-
-/* close  */
-
-/* art-crd */
-
-.art-crd {
-  display: flex;
-  margin: -13px;
-}
-
-.art-crd img {
-  width: 34vw;
-  height: 70vh;
-}
-
-.art-crd img:hover {
-  /* transform:  ; */
-  transition: all 0.5s ease-in-out;
-  cursor: pointer;
-}
-
-/* close  */
-
-.dist {
-  text-align: center;
-  font-size: 20px;
-  margin-bottom: 41px;
-  margin-top: 30px;
-}
-
-.dist-crd {
-  margin: -30px;
-  padding: 2px 10px 23px 31px;
-}
-
-.dist-crd img {
-  width: 34vw;
-  height: 90vh;
-  margin-bottom: 32px;
-  padding: 3px;
-}
-/* close  */
-
-.Accessoriea {
-  display: flex;
-}
-
-.Accessoriea img {
-  width: 28vw;
-  height: 57vh;
-}
-
-.Our {
-  text-align: center;
-  font-size: 20px;
-  margin-bottom: 41px;
-  margin-top: 60px;
-}
-
-.Our p {
-  font-family: initial;
-  filter: opacity(0.5);
-}
-
-.Our1 {
-  display: inline-block;
-  text-align: center;
-  width: 10vw;
-  padding: 3px 5px 5px 124px;
-}
-
-.Our1 h1 {
-  font-size: 20px;
-  font-family: math;
-  margin-left: 10px;
-}
-
-.Our1 p {
-  margin-top: 20px;
-  font-variant-caps: all-small-caps;
-  margin-left: -5pc;
-  padding: 0px 0px 5px 52px;
-  position: absolute;
-  width: 14vw;
-}
-
-.Our1 img {
-  width: 5vw;
-}
-
-/* close  */
-
-.Finest {
-  text-align: center;
-  font-size: 20px;
-  margin-bottom: 41px;
-  margin-top: 8pc;
-}
-
-.Finest-crd {
-  display: flex;
-  margin: -12px;
-}
-
-.Finest-crd img {
-  width: 34vw;
-  height: 45vh;
-}
-
-.Finest-crd p {
-  text-align: center;
-  position: absolute;
-  padding: 280px 2px 2px 125px;
-  font-size: 25px;
-}
-
-.Finest-crd span {
-  text-align: center;
-  position: absolute;
-  padding: 280px 2px 2px 22px;
-  font-size: 25px;
-}
-
-/* close  */
-
-#form {
-  margin-top: 2pc;
-  border: none;
-}
-
-.contact input {
-  padding: 5px 383px 22px 20px;
-  /* margin: 5px; */
-  box-shadow: 0px 0px 2px 0px;
-  border: none;
-}
-
-.contact-img img {
-  width: 53vw;
-  height: 100vh;
-  margin-left: 5pc;
-}
-
-#leave {
-  padding: 19px 386px 166px 17px;
-  /* margin: 5px; */
-  box-shadow: 0px 0px 2px 0px;
-  border: none;
-}
-
-#btne {
-  background: #111;
-  color: white;
-  padding: 8px 8px;
 }
