@@ -287,6 +287,7 @@ footer li {
 }
 /* Responsive Media Queries */
 @media (max-width: 915px) {
+  /* NavBar Area */
   #midSection {
     display: none;
   }
@@ -297,6 +298,7 @@ footer li {
     display: flex;
     align-items: flex-start;
     flex-direction: column;
+    margin-top: 5%;
   }
   .hamLinkContainer {
     display: inline-block;
@@ -328,5 +330,12 @@ footer li {
   #closeBtn {
     margin-top: -4.5vw;
     margin-left: 16vw;
+  }
+  #navLogo {
+    width: 70vw;
+  }
+  #rightSide {
+    top: 1%;
+    left: 35%;
   }
 }
