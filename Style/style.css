@@ -317,10 +317,10 @@ footer li {
     justify-content: left;
   }
   .halfContainerTransition {
-    margin-top: 25vw;
+    margin-left: -2%;
+    margin-top: 95%;
     height: 50vh;
     float: left;
-    border: 1px solid black;
     background-color: var(--theme-color);
     transition: all 0.3s ease;
   }
@@ -337,5 +337,30 @@ footer li {
   #rightSide {
     top: 1%;
     left: 35%;
+  }
+  #awardSection {
+    font-size: 0.5rem;
+  }
+  #consultForm {
+    margin-top: 10vw;
+  }
+  footer {
+    font-size: 0.3rem;
+    min-height: 30vw;
+    min-width: 105vw;
+  }
+  footer img {
+    max-width: 30vw;
+  }
+  #bedCard {
+    flex-direction: column;
+  }
+  #firstBCard,
+  #secondBCard,
+  #thirdBCard {
+    width: 90%;
+    height: 90vw;
+    background-size: contain;
+    margin: 1vw 0vw;
   }
 }
