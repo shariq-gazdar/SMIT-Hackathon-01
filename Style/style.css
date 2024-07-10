@@ -290,6 +290,9 @@ footer li {
 }
 /* Responsive Media Queries */
 @media (max-width: 915px) {
+  body {
+    overflow-x: hidden;
+  }
   /* NavBar Area */
   #midSection {
     display: none;
