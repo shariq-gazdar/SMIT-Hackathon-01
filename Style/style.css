@@ -293,6 +293,10 @@ footer li {
   body {
     overflow-x: hidden;
   }
+  #navBar {
+    position: fixed;
+    padding: 5% 3vw;
+  }
   /* NavBar Area */
   #midSection {
     display: none;
@@ -343,7 +347,7 @@ footer li {
   }
   #rightSide {
     top: 1%;
-    left: 35%;
+    left: 75%;
   }
   #awardSection {
     font-size: 0.5rem;
