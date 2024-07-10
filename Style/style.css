@@ -370,4 +370,7 @@ footer li {
     background-size: contain;
     margin: 1vw 0vw;
   }
+  #rightForm img {
+    width: 100%;
+  }
 }
