@@ -320,8 +320,9 @@ footer li {
     justify-content: left;
   }
   .halfContainerTransition {
-    margin-left: -2%;
+    margin-left: -3%;
     margin-top: 95%;
+    padding: 100vh 0vw;
     height: 50vh;
     float: left;
     background-color: var(--theme-color);
