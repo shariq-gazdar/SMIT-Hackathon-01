@@ -1,0 +1,66 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  max-width: 100dvw;
+  font-family: "Futura", "Avenir", "Century Gothic", sans-serif;
+}
+#fa {
+  font-size: 60px;
+  font-weight: bold;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  background-color: rgb(244, 243, 239);
+  height: 280px;
+}
+#g {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+
+  font-size: 35px;
+  font-weight: bold;
+}
+#f {
+  text-align: center;
+  font-size: 18px;
+}
+
+.timeline {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.award {
+  text-align: center;
+}
+
+.award img {
+  width: 55px;
+  height: auto;
+}
+#fai {
+  margin-top: 57px;
+}
+.ai {
+  display: flex;
+  background-color: rgb(244, 243, 239);
+  gap: 30px;
+  line-height: 1.8;
+}
+.world1 {
+  margin-left: 70px;
+  gap: 30px;
+}
+.crypto {
+  margin-left: 150px;
+}
+img {
+  width: 30px;
+  height: 30px;
+}
